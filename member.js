@@ -1,12 +1,14 @@
-function skillMember() {
+function skillMember() { 
   return {
     restrict: 'E',
-    templateUrl: 'modules/skills/views/member.html',
-    controller: 'SkillsMemberController',
-    controllerAs: 'vm',
-    bindToController: true,
-    scope: {
-      member: '=',
-    }
-  };
+    scope: 
+      { member: '=' }, 
+      templateUrl: 'templates/member.html',
+      controller: function($scope) {
+        $scope.member = $scope.member;
+      },
+      link: function(scope, element, attrs) {
+        scope.member = scope.member;
+      }
+  }
 }
