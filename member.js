@@ -7,6 +7,6 @@ function skillMember() {
     bindToController: true,
     scope: {
       member: '=',
-    },
-  }
+    }
+  };
 }
